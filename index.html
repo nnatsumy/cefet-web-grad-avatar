@@ -37,53 +37,11 @@
           <img src="imgs/acessorio-bandana.png" alt="Bandana" id="avatar-bandana" class="avatar-acessorio">
         </div>
         <p id="avatar-nome">Meu nome...</p>
-        <button type="button" id="baixar">
-          <img src="imgs/icone-tesoura.png" alt="Ícone de tesoura">
-          Baixar avatar</button>
       </section>
       <section id="secao-controles">
         <h2>Controles</h2>
         <div>
           <!-- coloque os controles aqui -->
-          <div>
-            <label>Nome: <input type="text" id="nome"></label>
-          </div>
-          <div>
-            <label>Cor da pele: <input type="color" id="cor-da-pele"></label>
-          </div>
-          <div>
-            <label>Cabelo:
-              <select id="cabelo">
-                <option value="imgs/cabelo-verde-medio.png">Cabelo verde médio</option>
-                <option value="imgs/cabelo-preto-medio.png">Cabelo preto médio</option>
-                <option value="imgs/cabelo-alaranjado-curto.png">Cabelo alaranjado curto</option>
-                <option value="imgs/cabelo-azul-longo.png">Cabelo azul longo</option>
-                <option value="imgs/cabelo-marrom-curto.png">Cabelo marrom curto</option>
-                <option value="imgs/cabelo-roxo-curto.png">Cabelo roxo curto</option>
-              </select>
-            </label>
-          </div>
-          <div>
-            Acessórios:
-            <div>
-              <label>
-                <input type="checkbox" value="oculos" id="oculos">
-                Óculos de grau
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" value="lacinhos" id="lacinhos">
-                Lacinhos vermelhos
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" value="bandana" id="bandana">
-                Bandana amarela
-              </label>
-            </div>
-          </div>
         </div>
       </section>
       <section id="secao-instrucoes">
@@ -92,8 +50,8 @@
         <span class="marca animada">
           <span>Avatar</span><span>Creator</span>
         </span>
-        é um sensacional criador de avatares. Escolha a cor do cabelo, dos
-        olhos e várias outras coisas e crie alguém bem bacana.</p>
+        é um sensacional criador de avatares. Escolha a cor, o cabelo, o nome
+        e várias outras coisas sensacionais e crie alguém bem bacana.</p>
         <h2>Créditos</h2>
         <p>As imagens usadas foram adaptadas do
           <a href="http://www.icongenerators.net/pixelavatar.html">
@@ -101,26 +59,5 @@
       </section>
     </main>
     <script src="avatar.js" charset="utf-8"></script>
-    <script src="https://github.com/niklasvh/html2canvas/releases/download/v0.5.0-beta4/html2canvas.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      let baixarEl = document.querySelector('#baixar');
-      let avatarEl = document.querySelector('#avatar-preview');
-      baixarEl.addEventListener('click', e => {
-        html2canvas(avatarEl, {
-          onrendered: function(canvas) {
-            let contextoGrafico = canvas.getContext('2d');
-            contextoGrafico.webkitImageSmoothingEnabled = false;
-            contextoGrafico.mozImageSmoothingEnabled = false;
-            contextoGrafico.imageSmoothingEnabled = false;
-            let imagemCodificadaEmURL = canvas.toDataURL();
-            let link = document.createElement('a');
-            link.download = 'avatar.png';
-            link.href = imagemCodificadaEmURL;
-            document.body.appendChild(link);
-            link.click();
-          }
-        });
-      });
-    </script>
   </body>
 </html>
