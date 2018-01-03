@@ -9,13 +9,13 @@ objetivos incluem:
 formulários com os quais o usuário possa interagir
 - Detectar quando o usuário interagiu com esses controles
 - Usar os valores que o usuário colocou e usá-los de alguma forma
-- (Opcional, desafio 3) Usar código JavaScript de uma biblioteca feita
+- (Opcional, desafio 2) Usar código JavaScript de uma biblioteca feita
   por outra pessoa
 
-Todos os controles, exceto pelo "botão salvar" (desafio 3) devem ser
+Todos os controles, exceto pelo "botão salvar" (desafio 2) devem ser
 colocados por você dentro da section `#secao-controles`.
 
-Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 3)
+Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 2)
 deve ser colocado dentro de `avatar.js`.
 
 ### Exercício 1: nome do avatar
