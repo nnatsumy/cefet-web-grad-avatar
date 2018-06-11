@@ -128,8 +128,8 @@ html2canvas(elementoQueSeraSalvo, opcoes);
 O `elementoQueSeraSalvo` é, como o nome indica, o elemento HTML que queremos
 colocar em uma imagem - no caso, o `#avatar-preview`. E `opcoes` é um
 objeto que define algumas configurações, das quais precisamos apenas de uma
-chamada `onrendered` (_i.e._, em inglês, `assimquedesenhou`:). Devemos
-passar, como valor dessa propriedade, uma função que será executada assim
+chamada `useCORS`. Logo após, chamaos outra função "then" esta função será chamada 
+logo após a renderização do avatar. Nesta função, criamos outra função que será executada assim
 que a biblioteca html2canvas conclua a sua mágica e, dentro dessa função,
 precisamos "arrumar uma forma" para baixar a imagem.
 
@@ -140,32 +140,33 @@ ser atrelado ao clique de um botão, é o seguinte:
 ```js
 // no clique de um botão "Baixar imagem"...
 // 'avatarEl' deve conter o elemento #avatar-preview
-html2canvas(avatarEl, {
-  onrendered: function(canvas) {
-    // a imagem foi gerada nesse objeto "canvas" e vamos pedir a ele
-    // uma URL que a representa, codificada em uma String no modelo base64¹
-    //
-    // ¹base64: é uma forma de representar os pixels da imagem (ou qualquer
-    // informação, na verdade) usando uma string com 64 tipos de caracteres
-    // (todas as letras, maiúsculas e minúsculas, os algarismos de 0 a 9
-    // e os símbolos '/' e '+'). Para mais informações, veja a página
-    // da Wikipedia sobre base64 (https://pt.wikipedia.org/wiki/Base64)
-    let imagemCodificadaEmURL = canvas.toDataURL();
+html2canvas(avatartotal, {
+                                      useCORS: true
+                                  }).then(function (canvas) {
+                                    // a  foi gerada nesse objeto "canvas" e vamos pedir a ele
+                                    // uma URL que a representa, codificada em uma String no modelo base64¹
+                                    //
+                                    // ¹base64: é uma forma de representar os pixels da imagem (ou qualquer
+                                    // informação, na verdade) usando uma string com 64 tipos de caracteres
+                                    // (todas as letras, maiúsculas e minúsculas, os algarismos de 0 a 9
+                                    // e os símbolos '/' e '+'). Para mais informações, veja a página
+                                    // da Wikipedia sobre base64 (https://pt.wikipedia.org/wiki/Base64)
+                                    let imagemCodificadaEmURL = canvas.toDataURL();
 
-    // cria um <a href="xxx" download="avatar.png"></a> dinamicamente
-    // e o configura para que ele aponte (href) para uma URL que codifica
-    // a imagem gerada pela biblioteca html2canvas
-    let linkEl = document.createElement('a');
-    linkEl.download = 'avatar.png';
-    linkEl.href = imagemCodificadaEmURL;
+                                    // cria um <a href="xxx" download="avatar.png"></a> dinamicamente
+                                    // e o configura para que ele aponte (href) para uma URL que codifica
+                                    // a imagem gerada pela biblioteca html2canvas
+                                    let linkEl = document.createElement('a');
+                                    linkEl.download = 'avatar.png';
+                                    linkEl.href = imagemCodificadaEmURL;
 
-    // coloca esse link no body da página
-    document.body.appendChild(linkEl);
+                                    // coloca esse link no body da página
+                                    document.body.appendChild(linkEl);
 
-    // simula um clique no link
-    linkEl.click();
-  }
-});
+                                    // simula um clique no link
+                                    linkEl.click();
+                                  }
+                                );
 // fim da callback de clique do botão
 ```
 
