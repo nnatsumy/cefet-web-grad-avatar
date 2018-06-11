@@ -140,7 +140,7 @@ ser atrelado ao clique de um botão, é o seguinte:
 ```js
 // no clique de um botão "Baixar imagem"...
 // 'avatarEl' deve conter o elemento #avatar-preview
-html2canvas(avatartotal, {
+html2canvas(avatarEl, {
                                       useCORS: true
                                   }).then(function (canvas) {
                                     // a  foi gerada nesse objeto "canvas" e vamos pedir a ele
