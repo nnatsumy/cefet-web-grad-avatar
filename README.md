@@ -1,6 +1,6 @@
 # AvatarCreator
 
-Nesta atividade vamos criar um montador de avatares em pixel art!
+Nesta atividade vamos criar um montador de avatares em pixel art! Cada aluno, assim que chegar, dever assinar, virtualmente, a [lista de presença](https://docs.google.com/spreadsheets/d/1-4r7GHaWhzPHMgl3ct3oulDJsQe-6g6i1GKgU9vEERc/edit?usp=sharing). A nota do aluno será computada considerando o horário de assinatura. 
 
 ![](docs/resultado-final.png)
 
