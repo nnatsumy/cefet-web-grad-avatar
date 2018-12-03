@@ -1,7 +1,6 @@
 # AvatarCreator
 
-[Baixe os arquivos](https://github.com/fegemo/cefet-front-end-avatar/archive/master.zip)
-aqui. Nesta atividade vamos criar um montador de avatares em pixel art!
+Nesta atividade vamos criar um montador de avatares em pixel art! Cada aluno, assim que chegar, dever assinar, virtualmente, a [lista de presença](https://docs.google.com/spreadsheets/d/1-4r7GHaWhzPHMgl3ct3oulDJsQe-6g6i1GKgU9vEERc/edit?usp=sharing). A nota do aluno será computada considerando o horário de assinatura. 
 
 ![](docs/resultado-final.png)
 
@@ -17,10 +16,10 @@ formulários com os quais o usuário possa interagir
 Todos os controles, exceto pelo "botão salvar" (desafio 1) devem ser
 colocados por você dentro da section `#secao-controles` no arquivo `index.html`.
 
-Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 2)
+Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 1)
 deve ser colocado dentro de `avatar.js`.
 
-Para auxiliar, veja o FAQ abaixo ou os slides sobre Formulários, eventos. Você poderá usar JQuery nesta prática.
+Se necessário, veja o FAQ (no final da prática) e/ou consulte os slides sobre [elementos de formulários](https://daniel-hasan.github.io/cefet-web-grad/classes/html5) - no final dele, falamos sobre eventos. Acesse os [slides sobre eventos](https://daniel-hasan.github.io/cefet-web-grad/classes/js2), caso queira relembrar. Você pode [usar JQuery](https://daniel-hasan.github.io/cefet-web-grad/classes/js4/) nesta prática.
 
 ### Exercício 1: nome do avatar
 
