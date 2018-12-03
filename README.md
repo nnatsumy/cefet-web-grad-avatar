@@ -10,7 +10,7 @@ Nossos objetivos incluem:
 formulários com os quais o usuário possa interagir
 - Detectar quando o usuário interagiu com esses controles (elementos HTML)
 - Usar os valores que o usuário colocou e usá-los de alguma forma
-- (Opcional, desafio 2) Usar código JavaScript de uma biblioteca feita
+- (Opcional, desafio 1) Usar código JavaScript de uma biblioteca feita
   por outra pessoa
 
 Todos os controles, exceto pelo "botão salvar" (desafio 1) devem ser
@@ -19,7 +19,7 @@ colocados por você dentro da section `#secao-controles` no arquivo `index.html`
 Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 1)
 deve ser colocado dentro de `avatar.js`.
 
-Se necessrio, consulte os slides sobre [elementos de formulários](https://daniel-hasan.github.io/cefet-web-grad/classes/html5) - no final dele, falamos sobre eventos. Acesse os [slides sobre eventos](https://daniel-hasan.github.io/cefet-web-grad/classes/js2), caso queira relembrar. Você pode [usar JQuery](https://daniel-hasan.github.io/cefet-web-grad/classes/js4/) nesta prática.
+Se necessrio, veja o FAQ (no final da prática) e/ou consulte os slides sobre [elementos de formulários](https://daniel-hasan.github.io/cefet-web-grad/classes/html5) - no final dele, falamos sobre eventos. Acesse os [slides sobre eventos](https://daniel-hasan.github.io/cefet-web-grad/classes/js2), caso queira relembrar. Você pode [usar JQuery](https://daniel-hasan.github.io/cefet-web-grad/classes/js4/) nesta prática.
 
 ### Exercício 1: nome do avatar
 
