@@ -1,7 +1,6 @@
 # AvatarCreator
 
-[Baixe os arquivos](https://github.com/fegemo/cefet-front-end-avatar/archive/master.zip)
-aqui. Nesta atividade vamos criar um montador de avatares em pixel art!
+Nesta atividade vamos criar um montador de avatares em pixel art!
 
 ![](docs/resultado-final.png)
 
@@ -14,11 +13,13 @@ formulários com os quais o usuário possa interagir
 - (Opcional, desafio 2) Usar código JavaScript de uma biblioteca feita
   por outra pessoa
 
-Todos os controles, exceto pelo "botão salvar" (desafio 2) devem ser
+Todos os controles, exceto pelo "botão salvar" (desafio 1) devem ser
 colocados por você dentro da section `#secao-controles` no arquivo `index.html`.
 
-Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 2)
+Todo o código JavaScript, exceto pelo referente ao "botão salvar" (desafio 1)
 deve ser colocado dentro de `avatar.js`.
+
+Se necessrio, consulte os slides sobre [elementos de formulários](https://daniel-hasan.github.io/cefet-web-grad/classes/html5) - no final dele, falamos sobre eventos. Acesse os [slides sobre eventos](https://daniel-hasan.github.io/cefet-web-grad/classes/js2), caso queira relembrar. Você pode [usar JQuery](https://daniel-hasan.github.io/cefet-web-grad/classes/js4/) nesta prática.
 
 ### Exercício 1: nome do avatar
 
@@ -78,7 +79,7 @@ Há três imagens com expressões faciais (olhos, sobrancelhas, nariz e boca):
 1. Use controles de "radio" com os quais o usuário pode escolher apenas
    uma opção -->
 
-### Desafio 1: acessórios
+### Exercício 4: acessórios
 
 Há três acessórios que o avatar pode usar:
 
@@ -95,7 +96,7 @@ tempo. Sendo assim, determine que tipo de controle é mais adequado para usar.
    um acessório, o código coloque ou remova a classe `visivel` da imagem
    que representa esse acessório.
 
-### Desafio 2: salvar o avatar (usando uma biblioteca JavaScript)
+### Desafio 1: salvar o avatar (usando uma biblioteca JavaScript)
 
 Crie um botão, abaixo do avatar, que, quando clicado, "baixa a imagem"
 do avatar. Exemplo:
