@@ -20,3 +20,15 @@ cor.addEventListener('change', function(e) {
 cabelo.addEventListener('change', function(e) {
   corcabelo.src = cabelo.value;
 });
+
+
+document.querySelectorAll('.acessorio').forEach(function(el){
+	el.addEventListener('change', function (e) {
+		let id = document.getElementById(e.currentTarget.value);
+		if (e.currentTarget.checked) 
+			id.classList.add('visivel'); 
+		else
+			id.classList.remove('visivel');
+	});
+});
+
